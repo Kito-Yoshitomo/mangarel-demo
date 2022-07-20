@@ -1,18 +1,18 @@
 import { firestore } from 'firebase/app';
 
-export type Publisher = {
+export type Author = {
   id?: string;
   name: string;
   nameReading: string | null;
-  website: string | null;
+  variation: string;
   createdAt: firestore.Timestamp | null;
   updatedAt: firestore.Timestamp | null;
 };
 
-export const blankPublisher: Publisher = {
+export const blankAuthor: Author = {
   name: '',
   nameReading: null,
-  website: null,
+  variation: '',
   createdAt: null,
   updatedAt: null,
 };
